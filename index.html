@@ -25,36 +25,37 @@
               <button>Add</button>
             </div>
         </section>
-      <section>
-        <h2>Todo</h2>
-        <ul id="incompleteTasks">
-          <li>
-            <input type="checkbox" id="payBill">
-            <label class="task" for="payBill">Pay Bills</label>
-            <input type="text" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete"><img src="./remove.svg"></button>
-          </li>
-          <li class="editMode">
-            <input type="checkbox">
-            <label class="task">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="task">
-            <button class="edit">Save</button><button class="delete"><img src="./remove.svg"></button>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2>Completed</h2>
-          <ul id="completed-tasks">
-            <li>
-              <input type="checkbox" checked>
-              <label class="task">See the Doctor</label>
-              <input type="text" class="task">
-              <button class="edit">Edit</button>
-              <button class="delete"><img src="./remove.svg"></button>
-            </li>
-          </ul>
-       </section>
+        <section class="todo-task">
+          <h2>Todo</h2>
+            <ul id="incomplete-tasks">
+              <li class="task-item">
+                <input type="checkbox" id="pay-bill" class="task-item__input_checkbox">
+                <label class="task-item__label" for="pay-bill">Pay Bills</label>
+                <input type="text" class="task-item__input_text">
+                <button class="edit">Edit</button>
+                <button class="delete"><img src="./remove.svg" alt="Delete Item"></button>
+              </li>
+              <li class="task-item task-item_edit-mode"><!--was class="editMode"-->
+                <input type="checkbox" id="edit-task" class="task-item__input_checkbox">
+                <label class="task-item__label" for="edit-task">Go Shopping</label>
+                <input type="text" value="Go Shopping" class="task-item__input_text_edit">
+                <button class="edit">Save</button>
+                <button class="delete"><img src="./remove.svg" alt="Delete Item"></button>
+              </li>
+            </ul>
+        </section>
+        <section>
+          <h2>Completed</h2>
+            <ul id="completed-tasks">
+              <li>
+                <input type="checkbox" class="task-item__input_checkbox" checked>
+                <label class="task-item__label">See the Doctor</label>
+                <input type="text" class="task-item__input_text">
+                <button class="edit">Edit</button>
+                <button class="delete"><img src="./remove.svg" alt="Delete Item"></button>
+              </li>
+            </ul>
+        </section>
       </div>
     </main>
   <script src="app.js"></script>
