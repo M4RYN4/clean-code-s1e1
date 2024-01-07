@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.body-content {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -44,7 +44,10 @@ body {
   display: flex;
 }
 
-ul {
+.list-incomplete-tasks,
+.list-completed-tasks
+/* ul  */
+{
   margin: 0;
   padding: 0px;
 }
@@ -123,7 +126,9 @@ input[type="text"]:focus
 }
 
 /* Task list */
-li {
+/* .task-item */
+li 
+{
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
