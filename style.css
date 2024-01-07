@@ -156,13 +156,13 @@ input[type="checkbox"]
     width: 226px;
 } */
 
-button.delete img {
+.delete_btn__img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+.delete_btn__img:hover {
     transform: rotateZ(0);
 }
 
