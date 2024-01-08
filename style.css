@@ -49,7 +49,7 @@
   padding: 0px;
 }
 
-li,
+.task-item,
 h2 {
   list-style: none;
 }
