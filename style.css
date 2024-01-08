@@ -33,8 +33,9 @@
 }
 
 .task-item__label,
-.task-item__input_text,
-.task-item__input_text_edit {
+.task-item__input_text
+/* .task-item__input_text_edit  */
+{
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -58,11 +59,13 @@ h2 {
 }
 
 input,
-button {
+.btn {
   outline: none;
 }
 
-button {
+.btn
+/* button  */
+{
   background: none;
   border: 0px;
   color: #888;
@@ -72,7 +75,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.btn:hover {
   color: #3a3a3a;
 }
 /* Heading */
@@ -88,9 +91,11 @@ h2,
 }
 
 .new-task__input,
-.task-item__input_text,
-.task-item__input_text_edit,
-input[type="text"] 
+.task-item__input_text
+/* , */
+/* .task-item__input_text_edit */
+/* ,
+input[type="text"]  */
 {
   margin: 0;
   font-size: 18px;
@@ -105,9 +110,11 @@ input[type="text"]
 }
 
 .new-task__input:focus,
-.task-item__input_text:focus,
-.task-item__input_text_edit:focus,
-input[type="text"]:focus 
+.task-item__input_text:focus
+/* , */
+/* .task-item__input_text_edit:focus */
+/* ,
+input[type="text"]:focus  */
 {
   color: #333;
 }
@@ -141,9 +148,9 @@ li
   vertical-align: middle;
 } */
 
-/* .task-item__input_checkbox, */
+.task-item__input_checkbox
 /* .task-item__input_text_edit */
-input[type="checkbox"] 
+/* input[type="checkbox"]  */
 {
   margin: 0 10px;
 }
@@ -162,33 +169,39 @@ input[type="checkbox"]
 } */
 
 .delete_btn__img {
-    height: 2em;
-    transform: rotateZ(45deg);
-    transition: transform 200ms ease-in;
+  height: 2em;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
 }
 
 .delete_btn__img:hover {
-    transform: rotateZ(0);
+  transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks label {
-    text-decoration: line-through;
-    color: #888;
+.task-item__label_completed
+/* #completed-tasks label  */
+{
+  text-decoration: line-through;
+  color: #888;
 }
 
 /* Edit Task */
-li input[type=text] {
-    display: none;
-}
+.task-item__input_text
 
-/* .task-item__input_text_edit */
-.task-item_edit-mode input[type=text] 
+/* li input[type=text]  */
 {
-    display: inline-block;
-    width: 224px;
+  display: none;
 }
 
-.task-item_edit-mode label {
-    display: none;
+.task-item_edit-mode .task-item__input_text {
+  display: inline-block;
+  width: 224px;
+}
+
+/* .task-item__label_edit */
+.task-item_edit-mode label 
+/* .task-item_edit-mode .task-item__label .task-item__label_edit */
+{
+  display: none;
 }
