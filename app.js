@@ -97,11 +97,20 @@ var editTask = function(){
         editBtn.innerText = "Edit";
     } else {
         editInput.value = label.innerText;
+        // label.innerText = "";
+        // //label.innerText = editInput.value;
+        // //label.className = "task-item__label";//add display none for label
+        // label.className = "task-item__label task-item__label_edit";
+        // //editInput.className = "task-item__input_txt";
+        // //editInput.style.display = "inline-block";
+        // //editInput.style.width = "24px";
+        // // editInput.style.width = "1000px";
+        // // editInput.style.zIndex = "2";
         editBtn.innerText = "Save";
     }
     //toggle .editmode on the parent.
     listItem.classList.toggle("task-item_edit-mode");
-};
+}
 
 //Delete task.
 var deleteTask = function() {

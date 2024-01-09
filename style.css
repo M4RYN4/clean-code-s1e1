@@ -50,11 +50,13 @@
 }
 
 .task-item,
-h2 {
+.h2 {
   list-style: none;
 }
 
-input,
+.new-task__input_txt,
+.task-item__input_checkbox,
+.task-item__input_txt,
 .btn {
   outline: none;
 }
@@ -73,7 +75,7 @@ input,
   color: #3a3a3a;
 }
 /* Heading */
-h2,
+.h2,
 .new-task__label {
   color: #333;
   font-weight: 700;
@@ -171,7 +173,6 @@ h2,
   width: 224px;
 }
 
-/* .task-item__label_edit */
 .task-item_edit-mode label {
   display: none;
 }
